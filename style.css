@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #EEF9BF;
+}
+
+header {
+    width: 100%;
+    height: 140px;
+
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    width: 100%;
+    font-size: 56px;
+    line-height: 66px;
+    letter-spacing: -0.004em;
+    text-align: center;
+
+    color: #75B79E;
+}
+
+main {
+    width: 100%;
+    height: auto;
+}
+
+.board {
+    width: auto;
+    height: auto;
+
+    
+}
