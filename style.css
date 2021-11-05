@@ -25,14 +25,73 @@ header {
     color: #75B79E;
 }
 
-main {
-    width: 100%;
-    height: auto;
+.board {
+    margin: auto;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.board {
-    width: auto;
-    height: auto;
+div {
+    width: 100%;
+    height: 100%;
+}
 
+.container {
+    margin: 20px;
+    width: 120px;
+    height: 150px;
+    perspective: 2000px;
+}
+
+.card {
+    transition: transform 2s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.front, .back {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    transition: all .5s;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+
+.front {
+    background: #A7E9AF;
+
+    border: 1px solid #99CEA8;
+    border-radius: 5px;
     
+}
+
+.front:hover {
+    bottom: 2px;
+    left: 2px;
+}
+
+.back {
+    background: #A7E9AF;
+
+    border: 1px solid #99CEA8;
+    border-radius: 5px;
+
+    transform: rotateY(180deg);
+}
+
+.back:hover {
+    bottom: 2px;
+    right: 2px;
 }

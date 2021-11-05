@@ -20,11 +20,61 @@
 
 <body>
     <header>
-        <div class="header">
+        <span class="header">
             PARROT CARD GAME
-        </div>
+        </span>
     </header>
 
+    <main>
+        <div class="play">
+            <button onclick="startTheGame()">PLAY</button>
+        </div>
+        <section class="board">
+            <div class="container">
+                <div class="card" onclick="flip(event)" data-identifier="card">
+                    <div class="front" data-identifier="front-face">
+                        <figure><img src="/assets/img/front.png" alt=""></figure>
+                    </div>
+                    <div class="back" data-identifier="back-face">
+                        Verso
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card" onclick="flip(this)">
+                    <div class="front">
+                        <figure><img src="/assets/img/front.png" alt=""></figure>
+                    </div>
+                    <div class="back">
+                        <h1>Verso</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card" onclick="flip(event)">
+                    <div class="front">
+                        <figure><img src="/assets/img/front.png" alt=""></figure>
+                    </div>
+                    <div class="back">
+                        <h1>Verso</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card" onclick="flip(event)">
+                    <div class="front">
+                        <figure><img src="/assets/img/front.png" alt=""></figure>
+                    </div>
+                    <div class="back">
+                        <h1>Verso</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="/script.js"></script>
 </body>
 
 </html>
