@@ -44,11 +44,11 @@ div {
     margin: 20px;
     width: 120px;
     height: 150px;
-    perspective: 2000px;
+    perspective: 300px;
 }
 
 .card {
-    transition: transform 2s;
+    transition: transform 1s;
     transform-style: preserve-3d;
     cursor: pointer;
 }
@@ -65,7 +65,6 @@ img {
     justify-content: center;
     align-items: center;
     backface-visibility: hidden;
-    transition: all .5s;
     box-shadow: 1px 1px 1px rgba(0,0,0,.3);
 }
 
